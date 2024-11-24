@@ -1,26 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "ISL Video Accessibility",
+  "name": "GLB Animations Player",
   "version": "1.0",
-  "description": "Overlay Indian Sign Language animations in a popup window.",
-  "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["https://*.youtube.com/*", "https://*.openai.com/*"],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Play animations from .glb files in your animations folder.",
+  "permissions": ["storage"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["https://*.youtube.com/*"],
-      "js": ["content.js"]
-    }
-  ],
   "web_accessible_resources": [
     {
-      "resources": ["animations/*"],
+      "resources": ["animations/*.glb"],
       "matches": ["<all_urls>"]
     }
   ]
