@@ -3,19 +3,12 @@ body {
   padding: 10px;
 }
 
-#animations-list {
-  max-height: 200px;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 5px;
+h1 {
+  font-size: 18px;
 }
 
-.animation-item {
+button {
+  margin: 5px;
+  padding: 5px;
   cursor: pointer;
-  padding: 5px;
-}
-
-.animation-item:hover, .animation-item.selected {
-  background-color: #0078d7;
-  color: white;
 }
